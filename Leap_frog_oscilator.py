@@ -9,7 +9,7 @@ omega = np.sqrt(k/m)
 # počáteční podmínky a časový krok
 x0 = 1
 v0 = 0
-dt = 0.01
+dt = 1
 t_max = 250
 
 # ukládací pole
@@ -51,8 +51,8 @@ plt.figure(figsize=(10, 5))
 plt.plot(t_values, E_values, label='Celková energie')
 plt.xlabel('Čas')
 plt.ylabel('Energie')
-plt.title('Závislost celkové energie na čase')
-plt.ylim(0.4999, 0.50009)
+plt.title('Závislost celkové energie na čase pro krok 1')
+plt.ylim(0.47, 0.65)
 plt.legend()
 plt.grid(True)
 plt.show()
